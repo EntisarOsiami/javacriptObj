@@ -36,40 +36,40 @@ const characters = [
     },
 ];
 
-
+// 1 - used the map after the filter method to get the names from the object character.
 let character0 = characters.filter((character) => character.mass > 75).map((character) => character.name);
 console.log(character0);
-
-let character1 = characters.find((character1) => character1.height > 180)
+// 2
+let character1 = characters.find((character1) => character1.height < 180)
 console.log(character1.eye_color);
-
+// 3
 let character2 = characters.filter((character2) => character2.height > 150 && character2.height < 210)
 console.log(character2);
-
+// 4
 let character3 = characters.filter((character3) => character3.gender === "female")
 console.log(character3);
-
+// 5
 let eyeColors = characters.map((character) => character.eye_color);
 console.log(eyeColors);
-
+// 6
 let masses = characters.map((character) => character.mass);
 console.log(masses);
-
-let sortedCharactersNames = characters.toSorted((a, b) => a.name > b.name);
+// 7 - using the spread operator to create a shallow copy of the array << prevent sort from mutating the original array.
+let sortedCharactersNames = [...characters].sort((a, b) => a.name.localeCompare(b.name));
 console.log(sortedCharactersNames);
-
-let sortedCharactersHeight = characters.toSorted((a, b) => b.height - a.height);
+// 8 - using toSorted method to sort the array. << this method does not mutate the original array.
+let sortedCharactersHeight = characters.toSorted((a, b) => a.height - b.height);
 console.log(sortedCharactersHeight);
-
+// 9
 let checkHeight = characters.every((character) => character.height > 100);
 console.log(checkHeight);
-
+// 10
 let checkWeight = characters.every((character) => character.mass < 200);
 console.log(checkWeight);
-
+// 11
 let eyeCheck = characters.some(character => character.eye_color === "black");
 console.log(eyeCheck);
-
+// 12
 let checkHeight2 = characters.some(character => character.height > 177);
 console.log(checkHeight2);
 
