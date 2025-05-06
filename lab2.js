@@ -72,3 +72,10 @@ console.log(eyeCheck);
 
 let checkHeight2 = characters.some(character => character.height > 177);
 console.log(checkHeight2);
+
+
+
+
+
+
+
