@@ -36,3 +36,24 @@ saudiAirlines.addDestination("Abha");
 console.log(saudiAirlines.destinations);
 
 console.log(saudiAirlines.getSummary());
+
+
+
+// functions:
+
+// addition function
+let addition = (num1,num2)=> num1+num2;
+console.log(addition(5,10));
+
+// subtraction function
+let subtraction = (num1,num2)=> { return num1-num2;}
+console.log(subtraction(5,10));
+
+// multiplication function
+let multiplication = function(num1,num2)
+{ return num1*num2;}
+console.log(multiplication(5,10));
+
+// division function
+let division = (num1,num2)=> num1/num2;
+console.log(division(5,10));
