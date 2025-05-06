@@ -36,7 +36,7 @@ saudiAirlines = {
 
 saudiAirlines.bookFlight("Riyadh");
 saudiAirlines.addDestination("Abha");
-console.log(saudiAirlines.destinations);
+console.log(`new destination is added : ${saudiAirlines.destinations}`);
 console.log(saudiAirlines.getSummary());
 
 // functions:
