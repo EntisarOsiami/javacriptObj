@@ -18,18 +18,20 @@ Book = {
 
 }
 
+//1
 console.log(Book);
+//2
 console.log(Book.title);
-
+//3
 Book.year = 2025;
 console.log(Book.year);
-
+//4
 delete Book.author;
 console.log(Book);
-
+//5
 Book.isBorrowed();
 console.log(Book);
-
+//6
 console.log(Book.publisher);
-
+//7
 console.log(Book.publisher.location.city);
